@@ -1,0 +1,103 @@
+% =============================================================================
+% LaTeX Template for Academic and Professional Documents
+% Author: Nicolas Huber
+% Email: nicolas.huber2@uzh.ch
+% 
+% This template is created for academic and professional use. 
+% Feel free to customize it to fit your needs. Attribution is appreciated but not required.
+% =============================================================================
+
+\documentclass[12pt]{article}
+
+% --- Packages Start ---
+\usepackage[a4paper]{geometry} % Geometry and layout
+\usepackage{amsmath,amssymb,amsfonts} % Fonts and symbols
+\usepackage{zi4} % Nice font for listings
+\usepackage{graphicx} % Graphics and figures
+\usepackage{float} % Improved interface for floating objects
+\usepackage{listings} % Code listings
+\usepackage{cite} % Bibliography
+\usepackage{enumitem} % Customized lists
+\usepackage{algorithmic} % Algorithms
+\usepackage{textcomp} % Additional text symbols
+\usepackage{xcolor} % Custom color support
+\usepackage{booktabs} % Publication quality tables
+% --- Packages End ---
+
+% --- Custom Commands Start ---
+\newcommand{\ie}{\textit{i.e., }}
+\newcommand{\eg}{\textit{e.g., }}
+\newcommand{\etal}{\textit{et al. }}
+\newcommand{\cf}{\textit{cf. }}
+\newcommand{\til}{\char`\~}
+% --- Custom Commands End ---
+
+% --- Custom Colors Start ---
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+% --- Custom Colors End ---
+
+
+% --- Custom Listing Start ---
+\lstset{
+  basicstyle=\ttfamily\small,
+  commentstyle=\color{deepgreen},
+  keywordstyle=\color{deepblue},
+  stringstyle=\color{deepred},
+  showstringspaces=false,
+  frame=none, % can be single
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+\lstdefinestyle{bashstyle}{
+  language=bash,
+  backgroundcolor=\color{gray!10}, % Light gray background
+  morekeywords={dstat, --output},
+}
+
+\lstdefinestyle{pythonstyle}{
+  language=Python,
+  backgroundcolor=\color{gray!10}, % Light gray background
+  morekeywords={def, return, if, else, print},
+}
+% --- Custom Listing End ---
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    \Huge
+    \textbf{Course Name}\\
+    \vspace{0.5cm}
+    \LARGE
+    Course Number: XXXX\\
+    \vspace{1.5cm}
+    \textbf{Assignment Number: XX}\\
+    \vspace{2cm}
+    \textbf{University of Technology Sydney}\\
+    \vfill
+    \includegraphics[width=0.4\textwidth]{assets/images/uts-logo.png}\\
+    \vfill
+    \Large
+    Author Names\\
+    Student ID: XXXXXX\\
+    Date: \today
+\end{titlepage}
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic}
+\input{01_introduction}
+\input{02_methodology}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,58 @@
+\section{Introduction}
+\subsection{Background}
+
+This is a sentence with a ref~\cite{Aydeger2019UtilizingAttacks}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[trim=0cm 10cm 0.0cm 0cm, clip, width=\linewidth]{assets/images/admin-panel-32-worker-inventories-synced.png}
+    \caption{Selection Framework Optimizing Four MTD Techniques}
+    \label{fig:architecture}
+\end{figure}
+
+
+\begin{lstlisting}[caption={Measuring System Impact of the Dynamic Analysis using\textit{dstat}},label=measurement]
+dstat -t --cpu --mem --fs -d --disk-tps 
+      -n --tcp --socket -y -p -N eth0 
+      --output $filename $delay $observations
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python,caption={Python code to calculate the factorial of a number.}]
+# Function to calculate the factorial of a number
+def factorial(n):
+    """Calculate the factorial of a number n"""
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Calling the factorial function
+number = 5
+result = factorial(number)
+print(f"The factorial of {number} is {result}")
+\end{lstlisting}
+
+
+\begin{table}
+    \centering
+    \caption{Detection time}\label{table:evaluation-detection-time}
+    \scriptsize
+    \begin{tabular}{lllllll}
+        \hline
+        & \multicolumn{3}{l|}{Trigger point} & \multicolumn{1}{l|}{} & Time interval & \\
+        & \textbf{Malware} & \textbf{Download} & \multicolumn{1}{l|}{\textbf{MTD}} & \multicolumn{1}{l|}{\textbf{MTD}} & \textbf{Detection (s)} & \textbf{Deployment (s)} \\
+        \hline
+        "Ransomware-PoC" & 07:15:00 & - & 07:15:26 & 1 & 26 & 143.78 \\
+        "httpBackdoor" & 07:26:00 & - & 07:26:26 & 2 & 26 & 8.94 \\
+        "BEURK" & 07:38:00 & - & 07:38:04 & 3 & 4 & 0.3 \\
+        "The Tick" & 07:52:00 & 07:50:30 & 07:52:34 & 4 & 124 (154) & 9.01 \\
+        "backdoor" & 08:10:00 & 08:10:30 & 08:10:38 & 4 & 8 (38) & 9.02 \\
+        "bdvl" & 08:22:00 & - & 08:22:04 & 3 & 4 & 0.25s \\
+        "BASHLITE" & 08:32:00 & - & - & - & - & - \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+\subsection{Objective}
